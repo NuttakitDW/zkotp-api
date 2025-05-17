@@ -1,9 +1,8 @@
 mod handlers;
 mod models;
-mod services;
 
-use actix_web::{App, HttpServer, web};
-use handlers::{verify, prove};
+use actix_web::{web, App, HttpServer};
+use handlers::{prove, verify};
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
