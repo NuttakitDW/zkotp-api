@@ -8,6 +8,6 @@ pub struct VerifyRequest {
 
 #[derive(Debug, Deserialize)]
 pub struct ProveRequest {
-    pub secret: String,
+    pub otp_code: u32,
     pub message: String,
 }
