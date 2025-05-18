@@ -8,13 +8,13 @@ pub struct ProveRequest {
 }
 
 #[derive(Debug, Serialize)]
-pub struct ProveSuccessResponse {
+pub struct ProveSuccess {
     pub valid: bool,
-    pub tx_nouce: u32,
+    pub tx_nonce: u32,
 }
 
 #[derive(Debug, Serialize)]
-pub struct ProveErrorResponse {
+pub struct ProveError {
     pub valid: bool,
     pub reason: String,
 }
