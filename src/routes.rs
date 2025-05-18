@@ -1,6 +1,6 @@
+use crate::handlers::{health::health, prove::prove};
 use actix_web::web;
-use crate::handlers;
 
 pub fn register(cfg: &mut web::ServiceConfig) {
-    cfg.service(handlers::health).service(handlers::prove);
+    cfg.service(health).service(prove);
 }
